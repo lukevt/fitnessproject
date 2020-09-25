@@ -8,7 +8,7 @@ export default class Profile extends Component {
                 <div className="row">
                     <div className="col-3" style={{height: 1000, border:"1px solid #C5B358"}}>
                         <div>
-                            <img className="rounded-circle" src="https://cdn.pixabay.com/photo/2014/11/17/13/17/crossfit-534615_1280.jpg" height="300" width="300"/> 
+                            <img className="rounded-circle" src="https://cdn.pixabay.com/photo/2014/11/17/13/17/crossfit-534615_1280.jpg" alt="personal-profile" height="300" width="300"/> 
                         </div>
                         <div style={{display:"flex", alignItems: "space-around", flexWrap:"wrap", margin:"auto", padding:10}}>
                             <a className="profile-btn">My Training</a>
