@@ -149,6 +149,6 @@
 
 
 @keyframes spin {
-    0%  {-webkit-transform: rotatex(-90deg);}
+    0%  {-webkit-transform: rotatey(-90deg);}
     100% {-webkit-translate: rotatex(70px);}   
 }
