@@ -8,12 +8,7 @@
 }
 
 img{
-  margin-top: 20px;
-  margin-bottom: 30px;
-  opacity: 0.75;
-  position:relative;
-  top: -100%;
-  animation: fallIn 0.5s linear 1s forwards
+  
 }
 
 .profile-title{
