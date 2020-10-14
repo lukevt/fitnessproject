@@ -1,0 +1,43 @@
+.main-nav{
+    height: 70px;
+    color:#C5B358;
+    align-items: center;
+    padding-left: 40px;
+    margin-left: 0;
+    margin-right: 0;
+    
+    
+
+}
+
+.nav-logo-text{
+    color:#C5B358;
+}
+
+.nav-logo-text:hover{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.main-menu{
+    display:flex;
+    justify-content: space-between;
+    font-size: 18;
+    width: 380px;
+    list-style-type: none !important;
+}
+
+a{
+    
+    color: rgba(255, 255, 255, 0.5);
+    font-style: normal;
+    }
+
+.active{
+    color:#C5B358;
+    font-weight: bold;
+}
+.main-menu a:hover{
+    color:#C5B358;
+    
+}
+
