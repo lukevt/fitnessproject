@@ -5,7 +5,8 @@ export default class Register extends Component {
     render() {
         return (
             <div className="container">
-                <img src="https://images.pexels.com/photos/4752866/pexels-photo-4752866.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="trainer and client" height="800" width="400"/>
+                <img className="register-image" src="https://images.pexels.com/photos/4752866/pexels-photo-4752866.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="trainer and client" height="800" width="400" style={{borderBottomLeftRadius: 10,
+    borderTopLeftRadius: 10}}/>
 
                 <div className="form-body">
                     <h4 className="registration-title">Registration Info</h4>

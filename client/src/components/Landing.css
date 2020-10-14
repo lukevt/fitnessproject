@@ -20,7 +20,7 @@
     height: 200px;
     width: 250;
     background-size: cover;
-    animation: spin 1s linear 0.15s ;
+    animation: spin 10s linear 0.15s ;
   }
 
   .container {
@@ -33,22 +33,24 @@
     font-size:35px;
   }
   .cube {
-      margin: 0 auto;
-     display:inline-block;
-      width: 200px;
-      height: 150px;
+      /* opacity: 0; */
+      visibility: hidden;
+      margin-left: 20px;
+      display:inline-block;
+      width: 250px;
+      height: 200px;
       -webkit-transition: -webkit-transform .33s;
       transition: transform .33s; /* Animate the transform properties */
       -webkit-transform-style: preserve-3d;
       transform-style: preserve-3d;
       background-size: cover;
       background-position: center;
+      animation: turn 5s linear 0.5s ;
+
   }
   
   .flip,.flop {
-      -webkit-border-radius: 5px;
-      border-radius: 5px;
-      height: 150px;
+    height: 200px;
     display:flex;
     align-items:center;
     text-align:center;
@@ -71,9 +73,14 @@
       transform: rotateX(-90deg) translateZ(-70px);
   }
   
-  .cube:hover {
+  /* .cube:hover {
       -webkit-transform: rotateX(90deg);
       transform: rotateX(90deg);
+  } */
+
+  @keyframes turn{
+    0%{transform: rotateX(90deg); visibility: hidden}
+    100%{transform: rotateX(-90deg); visibility: visible;} 
   }
 
   .btn{
@@ -103,4 +110,74 @@
 @keyframes spin {
     0%  {-webkit-transform: rotatey(-180deg);}
     100% {-webkit-translate: rotatex(70px);}   
+}
+
+.landing-title{
+
+    position:relative;
+    left:-100%;
+    margin-top: 20px;
+    color:#C5B358;
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.5,.5,.5,1.5);
+    opacity:0
+}
+.landing-title span{
+  color:#2f3337;
+    margin-left: 20px;
+}
+.landing-image{
+  border-radius: 50px;
+  opacity:0;
+  position: relative;
+  top:-100%;
+  animation: fallIn 0.5s linear 1s forwards
+  
+}
+
+.landing-btn{
+    position: relative;
+    left: -40%;
+    top: 205px;
+    display:block;
+    width:300px;
+    padding: 0px;
+    color: #C5B358;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    line-height: 100px;
+    border: 2px solid #C5B358;
+    background-image: linear-gradient(to right, #171717, transparent 50%);
+    background-position: 100% 0%;
+    background-size: 200% 100%;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-bottom: 5px;
+    transition: 0.5s;
+    /* visibility: hidden; */
+    animation:fadeIn 1s linear 2.5s forwards 
+}
+
+.landing-btn:hover{
+  color:white;
+  background-position: 0% 50%;
+  box-shadow: 1px 1px  3px rgba(0,0,0,1)
+}
+
+@keyframes slideIn{
+  from {left: -100%;} 
+  to {left: 10%;}
+}
+@keyframes fadeIn{
+  from {left: -40%;} 
+  to {left: 50%}
+}
+
+@keyframes fallIn{
+  from {top: -100%;} 
+  to {top: 0%;}
 }
