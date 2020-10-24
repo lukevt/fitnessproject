@@ -13,6 +13,7 @@ app.use(express.json({extended: false}))
 app.use(cors());
 
 app.get('/', (req, res) => res.send("API running"))
+app.use("/user", require("./routes/user"))
 
 
 
