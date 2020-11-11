@@ -3,6 +3,13 @@ const router = express.Router();
 const userModel = require('../models/userModel')
 const bcrypt = require('bcrypt')
 
+
+router.get('/', (req, res)=>{
+    userModel.find()
+    .then(users=>{
+        res.send(users)
+    })
+})
 router.post('/', async (req,res)=>{
     const {
         name,
