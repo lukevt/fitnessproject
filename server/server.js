@@ -25,6 +25,7 @@ app.use((req, res, next)=>{
 
 app.use('/users', require('./routes/users'))
 app.get('/', (req, res) => res.send("API running"))
+app.use("/user", require("./routes/user"))
 
 
 
