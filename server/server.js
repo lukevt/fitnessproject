@@ -23,9 +23,10 @@ app.use((req, res, next)=>{
     next();
 });
 
-app.use('/users', require('./routes/users'))
-app.get('/', (req, res) => res.send("API running"))
 
+app.get('/', (req, res) => res.send("API running"))
+app.use("/user", require("./routes/user"))
+app.use("/auth", require("./routes/auth"))
 
 
 
