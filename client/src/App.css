@@ -1,10 +1,12 @@
 .App {
   text-align: center;
- 
+  min-width: 100%;
   min-height: 100%;
 }
 
-
+.port-width{
+  width: 100%;
+}
 
 /*.App-logo {
   height: 40vmin;
@@ -40,3 +42,52 @@
     transform: rotate(360deg);
   }
 } */
+.home-container{
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+.landing-container{
+  background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),  url('https://wallpapercave.com/wp/wp2639536.jpg');
+  height: 780px;
+  padding-top: 155px;
+  padding-left: 100px;
+  padding-bottom: 150px;
+  display:flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.landing-link{
+  margin-left:0px !important;
+  color:#2f3337 !important;
+  
+
+}
+
+.footer {
+  background: #F4F4F4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
+  position: sticky; 
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 0.15;
+}

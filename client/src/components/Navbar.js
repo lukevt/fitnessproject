@@ -1,10 +1,12 @@
 import React from 'react'
 import './Navbar.css'
 import {Link, NavLink} from 'react-router-dom'
+import {CgGym} from 'react-icons/cg'
 const Navbar = () => (
     <nav className="row bg-dark main-nav">
         <div className="col-2">
             <Link to="/" className="nav-logo-text">
+                <CgGym size={35}/>
                 <h4>FitBuddy</h4>
             </Link>    
         </div>
